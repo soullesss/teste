@@ -13,6 +13,10 @@ Ela valida o escopo antes de tocar na rede, monta argumentos seguros para o Nmap
 - Exporta resultado em `text`, `json` ou `csv`.
 - Exige confirmacao explicita de autorizacao antes de rodar scan real.
 
+## 🤖 Ferramentas utilizadas
+
+Além das ferramentas tradicionais de desenvolvimento, este projeto utilizou assistência de inteligência artificial para auxiliar na elaboração de documentação, estrutura inicial do código e revisão de implementações. O desenvolvimento, a integração dos componentes e as decisões técnicas permaneceram sob responsabilidade do autor.
+
 ## Requisitos
 
 - Linux ou macOS
