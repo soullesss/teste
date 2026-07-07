@@ -1,0 +1,32 @@
+{
+  "findings": [
+    {
+      "host": "192.168.1.10",
+      "hostname": "lab-box.local",
+      "port": 22,
+      "product": "OpenSSH",
+      "protocol": "tcp",
+      "reason": "syn-ack",
+      "service": "ssh",
+      "state": "open",
+      "version": "9.6"
+    },
+    {
+      "host": "192.168.1.10",
+      "hostname": "lab-box.local",
+      "port": 443,
+      "product": "nginx",
+      "protocol": "tcp",
+      "reason": "syn-ack",
+      "service": "https",
+      "state": "open",
+      "version": "1.24"
+    }
+  ],
+  "finished_at": "2026-07-07T20:01:00Z",
+  "mode": "service",
+  "nmap_arguments": "-sT -sV --version-light -T3 --reason",
+  "started_at": "2026-07-07T20:00:00Z",
+  "target": "192.168.1.10",
+  "warnings": []
+}

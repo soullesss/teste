@@ -1,0 +1,6 @@
+NetScanner plan
+- target: 192.168.1.10
+- ports: 22,80,443
+- mode: service
+- privileged: no
+- command: nmap -sT -sV --version-light -T3 --reason -p 22,80,443 192.168.1.10

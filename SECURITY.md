@@ -1,24 +1,29 @@
 # Security
 
-Este repositorio e um teste estatico. Ele nao deve executar varreduras reais, coletar credenciais ou enviar dados para terceiros.
+NetScanner e uma ferramenta defensiva. Ela foi desenhada para auditoria autorizada em Linux e macOS, com alguns freios simples para evitar uso acidental fora de escopo.
+
+## Guardrails atuais
+
+- `scan` exige `--i-have-authorization`.
+- `plan` mostra o comando Nmap antes de executar qualquer coisa.
+- `syn` cai para TCP connect quando nao ha privilegio elevado.
+- Entrada de alvo e portas passa por validacao antes da execucao.
+- Logs usam Loguru com arquivo estruturado e retencao curta.
 
 ## Uso aceitavel
 
 - Laboratorios proprios.
-- Ambientes com autorizacao escrita.
-- Demonstracoes de fluxo, validacao e documentacao.
+- Redes internas com autorizacao escrita.
+- Validacao de exposicao de servicos em ambientes controlados.
+- Evidencia tecnica para hardening e inventario.
 
 ## Fora de escopo
 
 - Scan de redes de terceiros sem permissao.
-- Armazenamento de tokens, cookies, senhas ou dumps sensiveis.
-- Automacao que tente contornar controles de acesso.
+- Coleta ou armazenamento de credenciais.
+- Tentativa de contornar autenticacao, rate limit ou controles de acesso.
+- Qualquer fluxo de exploracao automatizada.
 
-## Diretriz de implementacao futura
+## Reportando problema
 
-Se este projeto virar uma CLI Python real, mantenha por padrao:
-
-- Loguru com logs estruturados e retencao curta.
-- Validacao de entrada com Pydantic antes de tocar na rede.
-- Nmap com checagem de instalacao e modo conservador sem privilegio.
-- Exportacao que remova segredos e reduza dados pessoais.
+Se voce encontrar uma falha de seguranca neste projeto, abra uma issue descrevendo impacto, versao e passos de reproducao em ambiente controlado. Nao inclua tokens, credenciais, IPs sensiveis ou dados pessoais.
