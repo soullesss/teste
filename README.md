@@ -15,7 +15,9 @@ Ela valida o escopo antes de tocar na rede, monta argumentos seguros para o Nmap
 
 ## 🤖 Ferramentas utilizadas
 
-Além das ferramentas tradicionais de desenvolvimento, este projeto utilizou assistência de inteligência artificial para auxiliar na elaboração de documentação, estrutura inicial do código e revisão de implementações. O desenvolvimento, a integração dos componentes e as decisões técnicas permaneceram sob responsabilidade do autor.
+Ferramentas de inteligência artificial foram utilizadas ocasionalmente como apoio para pesquisa, consulta de documentação e esclarecimento de dúvidas durante o desenvolvimento.
+
+Todo o conteúdo incorporado ao projeto passou por revisão e adequação antes de sua utilização.
 
 ## Requisitos
 
